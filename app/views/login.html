@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../public/assets/css/styles.css">
+  <title>Login</title>
+</head>
+<body>
+  <div class="formContainer">
+    <form action="../../auth/login.php" method="POST" id="loginForm">
+      <h1 style="text-align: center;">Login</h1>
+      <label>Email: </label>
+      <input type="email" placeholder="Enter email" name="email" required>
+      <label>Password: </label>
+      <input type="password" placeholder="Enter password" name="password" required>
+      <span style="color: red;" id="warning"></span>
+      <button>Login</button>
+      <span>Don't have account? <a href="register.html">Register</a></span>
+    </form>
+  </div>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+
+    // Get specific parameters
+    const name = urlParams.get("error");
+    document.querySelector('#warning').textContent=name;
+  </script>
+</body>
+</html>

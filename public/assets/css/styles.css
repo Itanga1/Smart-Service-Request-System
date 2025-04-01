@@ -1,0 +1,207 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+body > a {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background-color: dodgerblue;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+body > a:hover {
+  opacity: 0.8;
+}
+/* .filterContainer #filterButton {
+  padding: 15px 60px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: dodgerblue;
+  font-size: medium;
+  cursor: pointer;
+} */
+.formContainer {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: dodgerblue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.formContainer form {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 400px;
+  box-shadow: 0.1rem 0.1rem 0.9rem black;
+  padding: 40px 70px;
+  padding-top: 30px;
+  gap: 10px;
+  position: relative;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+.formContainer form input {
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid dodgerblue;
+}
+.formContainer form button {
+  padding: 15px 60px;
+  border: none;
+  /* border-radius: 20px;
+  position: absolute;
+  bottom: 90px;
+  right: 35%; */
+  font-weight: bold;
+  color: white;
+  background-color: dodgerblue;
+  font-size: medium;
+  cursor: pointer;
+}
+.formContainer form span {
+  font-weight: normal;
+  bottom: 40px;
+  margin-left: 30%;
+}
+.title {
+  text-align: center;
+}
+#serviceRequestForm {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  width: 600px;
+  align-self: center;
+  padding: 20px 40px;
+  padding-bottom: 70px;
+  /* box-shadow: 0.1rem 0.1rem 0.9rem black; */
+  border: 2px solid dodgerblue;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  position: relative;
+  font-weight: bold;
+  gap: 10px;
+}
+#serviceRequestForm input,
+select,
+textarea {
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid dodgerblue;
+}
+#serviceRequestForm button {
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+  background-color: dodgerblue;
+}
+#serviceRequestForm textarea {
+  height: 70px;
+  resize: none;
+}
+.requestsContainer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 1200px;
+  align-self: center;
+  border: 3px solid dodgerblue;
+  padding: 40px;
+  border-radius: 40px;
+  background-color: whitesmoke;
+}
+.requestsContainer .request {
+  /* box-shadow: 0.1rem 0.1rem 0.9rem black; */
+  border: 2px solid dodgerblue;
+  padding: 40px;
+  position: relative;
+  margin: 5px;
+  border-radius: 40px;
+  background-color: white;
+}
+.requestsContainer .request h6 {
+  margin: 0;
+}
+.requestsContainer .request h3 {
+  margin: 10px 0;
+}
+.requestsContainer .request .status {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-family: cursive;
+  font-weight: bold;
+  border: 2px dashed dodgerblue;
+  padding: 5px 20px;
+}
+.requestsContainer .request .buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.requestsContainer .request .buttonContainer a {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+.requestsContainer .request .buttonContainer a:first-child {
+  background-color: dodgerblue;
+}
+.requestsContainer .request .buttonContainer a:last-child {
+  background-color: red;
+}
+#updateRequest {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#updateRequest form {
+  background-color: white;
+}
+.title {
+  font-size: 50px;
+}
+.requestsContainer .request .responseButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  background-color: dodgerblue;
+  cursor: pointer;
+}
+.requestsContainer .request .responseButton:hover {
+  opacity: 0.8;
+}
+
+.requestsContainer .request .responseInput {
+  padding: 10px;
+  border-radius: 20px;
+  width: 200px;
+  border: 2px solid dodgerblue;
+}
