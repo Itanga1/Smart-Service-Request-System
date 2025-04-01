@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <option value="admin tasks">Admin Tasks</option>
       </select>
       <label>Description</label>
-      <textarea name="description" placeholder="Describe the requested Service" required><?php echo "{$row['description']}" ?></textarea>
+      <textarea name="description" placeholder="Describe the requested Service " required><?php echo "{$row['description']}" ?></textarea>
       <button type="submit">Apply Changes</button>
     </form>
   </div>
